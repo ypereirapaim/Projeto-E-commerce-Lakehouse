@@ -1,12 +1,12 @@
-# 🛒 Projeto E-commerce Lakehouse
+# Projeto E-commerce Lakehouse
 
 Projeto de portfólio para demonstrar um pipeline de dados de e-commerce usando arquitetura em camadas **Raw → Bronze → Silver → Gold**.
 
-## 🎯 Objetivo
+#  Objetivo
 
 Simular um pequeno ambiente de dados de e-commerce, partindo de arquivos CSV brutos, tratando os dados com SQL e gerando uma camada Gold pronta para análises.
 
-## 🏗️ Arquitetura
+#  Arquitetura
 
 ```text
 CSV / RAW
@@ -20,7 +20,7 @@ GOLD
 SQL Analytics
 ```
 
-## 🛠️ Tecnologias
+# Tecnologias
 
 - Python
 - SQL
@@ -30,7 +30,7 @@ SQL Analytics
 - Parquet
 - Git / GitHub
 
-## 📂 Estrutura
+#  Estrutura
 
 ```text
 Projeto-E-commerce-Lakehouse/
@@ -51,7 +51,7 @@ Projeto-E-commerce-Lakehouse/
 └── README.md
 ```
 
-## 📊 Dados
+#  Dados
 
 O projeto possui dados simulados de:
 
@@ -61,21 +61,21 @@ O projeto possui dados simulados de:
 - Pedidos
 - Itens dos pedidos
 
-## 🔄 Camadas
+#  Camadas
 
-### Raw
+# Raw
 Dados originais em CSV.
 
-### Bronze
+# Bronze
 Leitura dos dados Raw e persistência em tabelas analíticas.
 
-### Silver
+# Silver
 Limpeza, padronização e conversão de tipos.
 
-### Gold
+# Gold
 Tabela `gold_sales` preparada para análise.
 
-## 📈 Perguntas respondidas
+#  Perguntas respondidas
 
 - Qual o faturamento total?
 - Quais são os produtos mais vendidos?
@@ -87,9 +87,9 @@ Tabela `gold_sales` preparada para análise.
 - Como o faturamento evolui por mês?
 - Qual o ranking dos produtos?
 
-## ▶️ Como executar
+#  Como executar
 
-### 1. Criar ambiente virtual
+# 1. Criar ambiente virtual
 
 ```bash
 python -m venv .venv
@@ -107,19 +107,19 @@ Linux/Mac:
 source .venv/bin/activate
 ```
 
-### 2. Instalar dependências
+# 2. Instalar dependências
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Gerar dados
+# 3. Gerar dados
 
 ```bash
 python src/generate_data.py
 ```
 
-### 4. Executar pipeline
+# 4. Executar pipeline
 
 ```bash
 python src/run_pipeline.py
@@ -127,7 +127,7 @@ python src/run_pipeline.py
 
 O pipeline cria o banco local `ecommerce.duckdb`.
 
-### 5. Executar análises
+# 5. Executar análises
 
 As consultas estão em:
 
@@ -135,7 +135,7 @@ As consultas estão em:
 sql/04_analytics.sql
 ```
 
-## 🧠 Conceitos demonstrados
+#  Conceitos demonstrados
 
 - SQL
 - JOIN
@@ -150,7 +150,7 @@ sql/04_analytics.sql
 - Data Lakehouse
 - Camadas Bronze, Silver e Gold
 
-## 🚀 Próximos passos
+#  Próximos passos
 
 - Adicionar testes de qualidade de dados
 - Criar dashboard no Power BI
